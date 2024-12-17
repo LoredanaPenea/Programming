@@ -16,6 +16,10 @@ namespace TrainingPrograming.Session4
             IsOld();
             ShowGender();
             YourGenderPreference();
+            EvenPositiveNegative(10);
+            EvenPositiveNegative(-15);
+            EvenPositiveNegative(-22);
+            EvenPositiveNegative(0);
         }
         public void IsOld()
         {
@@ -58,6 +62,35 @@ namespace TrainingPrograming.Session4
                     Console.WriteLine("I don't recognize this gendre");
                     break;
 
+            }
+        }
+        public void EvenPositiveNegative(int number)
+        {
+            if (number % 2 == 0)
+            {
+                if (number > 0)
+                {
+                    Console.WriteLine("The number is even and positive.");
+                }
+                else if (number < 0)
+                {
+                    Console.WriteLine("The number is even and negative.");
+                }
+                else
+                {
+                    Console.WriteLine("The number is zero.");
+                }
+            }
+            else
+            {
+                if (number > 0)
+                {
+                    Console.WriteLine("The number is odd and positive.");
+                }
+                else
+                {
+                    Console.WriteLine("The number is odd and negative.");
+                }
             }
         }
     }
