@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrainingPrograming.Session3
 {
-    public class Method1
+    public class Method
     {
         [Test]
         public void MethodTest ()
@@ -15,6 +15,7 @@ namespace TrainingPrograming.Session3
             Sum2Numbers(10, 20);
             int sum = GetResult(15, 33, 47);
             Console.WriteLine($"The result is {sum}");
+            
         }
       
         public void Sum2Numbers()
