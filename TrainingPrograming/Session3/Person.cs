@@ -11,7 +11,7 @@ namespace TrainingPrograming.Session3
         public static string FirstName = "Loredana";
         public static string LastName = "Penea";
         public static int Age = 36;
-        public static string Gender = "Female";
+        public static string Gender = "Bi";
 
         [Test]
         public static void MethodHomework()

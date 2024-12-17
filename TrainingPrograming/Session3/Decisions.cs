@@ -14,6 +14,7 @@ namespace TrainingPrograming.Session3
         {
             IsOld();
             ShowGender();
+            YourGenderPreference();
         }
         public void IsOld()
         {
@@ -32,6 +33,26 @@ namespace TrainingPrograming.Session3
             } else if (Person.Gender.Equals("Female"))
                 Console.WriteLine("You are a female!");
             else Console.WriteLine("You haven't specified you gender!");
+        }
+
+        public void YourGenderPreference()
+        {
+            switch (Person.Gender)
+            {
+                case ("Male"):
+                    Console.WriteLine("You are a male!");
+                    break;
+                case ("Female"):
+                    Console.WriteLine("You are a female!");
+                    break;
+                case ("Gay"):
+                    Console.WriteLine("You are gay!");
+                    break;
+                default:
+                    Console.WriteLine("I don't recognize this gendre");
+                    break;
+
+            }
         }
     }
 }
