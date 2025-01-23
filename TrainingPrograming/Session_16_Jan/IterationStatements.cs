@@ -10,7 +10,7 @@ namespace TrainingPrograming.Session_16_Jan
     {
         [Test]
 
-        public void TestExample()
+        public void TestExampleFor()
         {
             /*for (int i = 1; i <= 7; i++)
             {
@@ -44,6 +44,66 @@ namespace TrainingPrograming.Session_16_Jan
             {
                 Console.WriteLine(name);
             }
+        }
+
+        [Test]
+
+        public void TestExampleWhile()
+        {
+          //  int counter = 18;
+         //   while (counter <= 30)
+         //   {
+         //       Console.WriteLine($"The current counter value is: {counter}");
+         //       counter++;
+         //   }
+
+         //   MethodWhile(50,61);
+           // MethodWhileBreak(50, 60, 55);
+            MethodWhileSkip(50, 60, 55);
+            MethodDoWhile();
+        }
+
+        public void MethodWhile(int counterStart, int counterEnd)
+        {
+            while (counterStart <= counterEnd)
+            {
+                Console.WriteLine($"The current counter value is: {counterStart}");
+                counterStart++;
+            }
+        }
+
+        public void MethodWhileBreak(int counter, int limit, int stopValue)
+        {
+            while (counter <= limit)
+            {
+                if (counter == stopValue)
+                    break;
+                Console.WriteLine($"The current counter value is: {counter}");
+                counter++;
+            }
+        }
+
+        public void MethodWhileSkip(int counter, int limit, int skipValue)
+        {
+            while (counter <= limit)
+            {
+                counter++;
+                if (counter == skipValue)
+                {
+                    continue;
+                }
+                 Console.WriteLine($"The current counter value is: {counter}");
+            }
+        }
+
+        public void MethodDoWhile()
+        {
+            int counter = -5;
+            do
+            {
+                Console.WriteLine($"Counter value is: {counter}");
+                counter++;
+            } while (counter <= 5);
         }
     }
 }

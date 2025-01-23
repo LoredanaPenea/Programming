@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,7 +20,7 @@ namespace TrainingPrograming.Session3
         {
             int xAge = Person.AgeInXYears(15);
             Person.DisplayPersonDetails();
-            Console.WriteLine($"You will be {xAge} years old in 15 years!");
+           // Console.WriteLine($"You will be {xAge} years old in 15 years!");
 
             Person.AddSkills("Software");
             Person.AddSkills("Testing");
@@ -32,7 +33,8 @@ namespace TrainingPrograming.Session3
             Person.AddSkills("Baking");
 
             Person.DisplayPersonSkills();
-
+            Person.CountTo(114);
+            Person.CountUpTo(103);
         }
 
         public static int AgeInXYears(int x)
@@ -68,6 +70,52 @@ namespace TrainingPrograming.Session3
                     break;
                 }
             }
+        }
+
+        public static void CountTo(int number)
+        {
+            Console.WriteLine($"Counting up to {number}:");
+            
+            int i = 0;
+            while (i < number)
+            {
+                i++;
+                if (i == 10)
+                {
+                    Console.WriteLine("\nNumber skipped!");
+                    continue;
+                }
+                if (i == 99)
+                {
+                    Console.WriteLine(i + "; \nCannot count past 99!");
+                    break;
+                }
+                
+                Console.Write(i + "; ");
+            }
+        }
+
+        public static void CountUpTo(int number)
+        {
+            Console.WriteLine($"Counting up to {number}:");
+            int i = 0;
+
+            do
+            {
+                i++;
+                if (i == 10)
+                {
+                    Console.WriteLine("\n Number skipped!");
+                    continue;
+                }
+                if (i == 99)
+                {
+                    Console.WriteLine("\nCannot count past 99!");
+                    break;
+                }
+                Console.Write(i + "; ");
+               
+            } while (i < number);
         }
     }
 }
