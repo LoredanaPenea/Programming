@@ -22,7 +22,6 @@ namespace TrainingPrograming.OOP
             Car car3 = new Car("benzina", "alba", 5, 1.4, "automata");
             car3.DisplayData();
 
-            
         }
     }
 }
