@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.Session4
+namespace TrainingPrograming.BeginerTier.Session4
 {
     public class DecisionMaking
     {

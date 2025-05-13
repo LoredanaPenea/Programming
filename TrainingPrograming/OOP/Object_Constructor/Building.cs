@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP
+namespace TrainingPrograming.OOP.Object_Constructor
 {
     public class Building
     {
@@ -19,7 +19,7 @@ namespace TrainingPrograming.OOP
             this.floorNumbers = floorNumbers;
             this.constructionMaterial = constructionMaterial;
             this.hasFurniture = hasFurniture;
-            this.furnitureItems = hasFurniture ? new List<string>() : new List<string>();
+            furnitureItems = hasFurniture ? new List<string>() : new List<string>();
         }
         public void DisplayData()
         {
@@ -48,7 +48,7 @@ namespace TrainingPrograming.OOP
         }
         public void AddFurniture()
         {
-            this.hasFurniture= true;
+            hasFurniture= true;
 
         }
 

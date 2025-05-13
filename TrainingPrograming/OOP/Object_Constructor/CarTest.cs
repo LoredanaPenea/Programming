@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP
+namespace TrainingPrograming.OOP.Object_Constructor
 {
     public class CarTest
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.Session_16_Jan
+namespace TrainingPrograming.BeginerTier.Session_16_Jan
 {
     public class IterationStatements
     {

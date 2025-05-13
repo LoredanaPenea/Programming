@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.Session_11_Feb
+namespace TrainingPrograming.BeginerTier.Session_11_Feb
 {
     public class ListsArraysHomework
     {

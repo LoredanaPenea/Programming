@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TrainingPrograming.Session3;
+using TrainingPrograming.BeginerTier.Session3;
 
-namespace TrainingPrograming.Session4
+namespace TrainingPrograming.BeginerTier.Session4
 {
     public class Decisions
     {

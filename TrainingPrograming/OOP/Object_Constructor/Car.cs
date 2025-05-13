@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP
+namespace TrainingPrograming.OOP.Object_Constructor
 {
     public class Car
     {

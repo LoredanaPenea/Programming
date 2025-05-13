@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.Session3
+namespace TrainingPrograming.BeginerTier.Session3
 {
     public class Method
     {

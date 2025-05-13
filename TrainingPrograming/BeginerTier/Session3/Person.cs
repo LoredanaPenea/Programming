@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.Session3
+namespace TrainingPrograming.BeginerTier.Session3
 {
     public static class Person
      {
@@ -18,23 +18,23 @@ namespace TrainingPrograming.Session3
         [Test]
         public static void MethodHomework()
         {
-            int xAge = Person.AgeInXYears(15);
-            Person.DisplayPersonDetails();
+            int xAge = AgeInXYears(15);
+            DisplayPersonDetails();
            // Console.WriteLine($"You will be {xAge} years old in 15 years!");
 
-            Person.AddSkills("Software");
-            Person.AddSkills("Testing");
-            Person.AddSkills("Gardening");
-            Person.AddSkills("Ninja");
-            Person.AddSkills("Dancing");
-            Person.AddSkills("Driving");
-            Person.AddSkills("CIA");
-            Person.AddSkills("Spanish Language");
-            Person.AddSkills("Baking");
+            AddSkills("Software");
+            AddSkills("Testing");
+            AddSkills("Gardening");
+            AddSkills("Ninja");
+            AddSkills("Dancing");
+            AddSkills("Driving");
+            AddSkills("CIA");
+            AddSkills("Spanish Language");
+            AddSkills("Baking");
 
-            Person.DisplayPersonSkills();
-            Person.CountTo(114);
-            Person.CountUpTo(103);
+            DisplayPersonSkills();
+            CountTo(114);
+            CountUpTo(103);
         }
 
         public static int AgeInXYears(int x)
@@ -62,7 +62,7 @@ namespace TrainingPrograming.Session3
 
             foreach (string skill in Skills)
             {
-                if (!skill.Equals("Ninja") && (!skill.Equals("CIA")))
+                if (!skill.Equals("Ninja") && !skill.Equals("CIA"))
                     Console.Write(skill + "; ");
                 else if (skill.Equals("CIA"))
                 {
