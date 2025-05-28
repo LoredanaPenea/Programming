@@ -14,6 +14,12 @@ namespace TrainingPrograming.OOP.Abstractization
         private string University { get; set; }
         private string Profile {  get; set; }
 
+        public string Name { get; }
+
+        public int Age { get; }
+
+        public bool Erasmus => throw new NotImplementedException();
+
         public EmployeeStudent(string firstName, string lastName, int age, string company, double salary, string university,string profile) : base(firstName,lastName, age)
         {
             Company = company;

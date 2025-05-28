@@ -11,10 +11,10 @@ namespace TrainingPrograming.OOP.Abstractization
         private string Company {  get; set; }
         private double Salary { get; set; }
 
-        public Employee(string firstName,string lastName, int age, string Company, double Salary) : base (firstName,lastName, age)
+        public Employee(string firstName,string lastName, int age, string company, double salary) : base (firstName,lastName, age)
         {
-            this.Company = Company;
-            this.Salary = Salary;
+            this.Company = company;
+            this.Salary = salary;
         }
 
         public void DisplayEmployeeInfo()

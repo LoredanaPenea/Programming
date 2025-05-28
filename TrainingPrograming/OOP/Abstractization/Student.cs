@@ -12,19 +12,38 @@ namespace TrainingPrograming.OOP.Abstractization
         private string Profile { get; set; }
         private bool HaveScholarShip { get; set; }
 
-        public string Name => ;
+        //if FirstName, LastName and Age are set as private in Person class 
+        // can not use Name and Age from IStudent interface
+        
+        public string Name => FirstName + LastName;
+        public int Age => base.Age; //does not recognize Age as Person.Age , need to add base.Age
+        public bool Erasmus { get ; }
 
-        public int Age => ;
 
-        public Student (string firstName, string lastName, int age, string university, string profile, bool haveScholarShip) : base(firstName, lastName, age)
+       
+        public Student(string firstName, string lastName, int age, string university, string profile, bool haveScholarShip) : base(firstName, lastName, age)
         {
             University = university;
             Profile = profile;
             HaveScholarShip = haveScholarShip;
         }
+        //new contructor to also add the property Erasmus
+        public Student(string firstName, string lastName, int age, string university, string profile, bool haveScholarShip,bool erasmus) : base(firstName, lastName, age)
+        {
+            University = university;
+            Profile = profile;
+            HaveScholarShip = haveScholarShip;
+            Erasmus = erasmus;
+        }
+        
         public void DisplayStudentInfo()
         {
-
+            DisplayInfo();
+            Console.WriteLine($"Full Name: {Name}");
+            Console.WriteLine($"University: {University}");
+            Console.WriteLine($"With profile: {Profile}");
+            Console.WriteLine($"Has Scholarship: {HaveScholarShip}");
+            Console.WriteLine($"Is in Erasmus: {Erasmus}");
         }
         public void Study()
         {

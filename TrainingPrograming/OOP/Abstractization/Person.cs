@@ -8,9 +8,9 @@ namespace TrainingPrograming.OOP.Abstractization
 {
     public class Person
     { 
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private int Age {  get; set; }
+        protected string FirstName { get; set; }
+        protected string LastName { get; set; }
+        protected int Age {  get; set; }
 
         public Person(string firstName, string lastName, int age) 
         { 

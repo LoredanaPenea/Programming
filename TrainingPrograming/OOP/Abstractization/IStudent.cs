@@ -8,8 +8,9 @@ namespace TrainingPrograming.OOP.Abstractization
 {
     public interface IStudent
     {
-        string Name { get; }
+        string Name {  get; }
         int Age { get; }
+        bool Erasmus { get; }   
         void Study();
         void AttendClass();
         void TakeExam();

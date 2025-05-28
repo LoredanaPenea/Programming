@@ -34,6 +34,13 @@ namespace TrainingPrograming.OOP.Abstractization
             employeeStudent.TakeABreak();
             employeeStudent.AttendClass();
             employeeStudent.TakeExam();
+
+            Student student = new Student("Mihaela", "Mihai", 24, "NYU", "Robotics",true);
+            student.DisplayStudentInfo();
+            student.AttendClass();
+            Student student2 = new Student("John", "Johnathan", 21, "Cambridge", "Literature", true, true);
+            student2.DisplayStudentInfo();
+
         }
     }
 }
