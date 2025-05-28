@@ -8,9 +8,10 @@ namespace TrainingPrograming.OOP.Inheritance.Example
 {
     public class Test
     {
-        //mostenire = concept prin care o clasa(copil) mosteneste alta clasa(parinte)
+        //Inheritance/Mostenire = concept prin care o clasa(copil) mosteneste alta clasa(parinte)
         //in C# se poate mosteni doar o singura clasa
         //clasa copil preia proprietatile si metodele unei clase parinte
+
         [Test]
         public void TestMethod()
         {
