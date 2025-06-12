@@ -5,7 +5,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP.Abstractization
+namespace TrainingPrograming.OOP.Abstractization.Abstractization_Interfaces
 {
     public class EmployeeStudent :Person, IEmployee,IStudent
     {
@@ -18,7 +18,7 @@ namespace TrainingPrograming.OOP.Abstractization
 
         public int Age { get; }
 
-        public bool Erasmus => throw new NotImplementedException();
+        public bool Erasmus { get; }
 
         public EmployeeStudent(string firstName, string lastName, int age, string company, double salary, string university,string profile) : base(firstName,lastName, age)
         {

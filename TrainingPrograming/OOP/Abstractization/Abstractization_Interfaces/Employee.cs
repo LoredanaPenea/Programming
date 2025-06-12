@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP.Abstractization
+namespace TrainingPrograming.OOP.Abstractization.Abstractization_Interfaces
 {
     public class Employee : Person, IEmployee
     {
@@ -13,8 +13,8 @@ namespace TrainingPrograming.OOP.Abstractization
 
         public Employee(string firstName,string lastName, int age, string company, double salary) : base (firstName,lastName, age)
         {
-            this.Company = company;
-            this.Salary = salary;
+            Company = company;
+            Salary = salary;
         }
 
         public void DisplayEmployeeInfo()

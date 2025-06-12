@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP.Abstractization
+namespace TrainingPrograming.OOP.Abstractization.Abstractization_Interfaces
 {
     public class OOPAbstractTest
     {

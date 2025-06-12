@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrainingPrograming.OOP.Abstractization
+namespace TrainingPrograming.OOP.Polymorphism
 {
     public class Person
-    { 
+    {
         protected string FirstName { get; set; }
         protected string LastName { get; set; }
-        protected int Age {  get; set; }
+        protected int Age { get; set; }
 
-        public Person(string firstName, string lastName, int age) 
-        { 
+        public Person(string firstName, string lastName, int age)
+        {
             FirstName = firstName;
             LastName = lastName;
             Age = age;
@@ -24,6 +24,11 @@ namespace TrainingPrograming.OOP.Abstractization
             Console.WriteLine($"First Name: {FirstName}");
             Console.WriteLine($"Last Name: {LastName}");
             Console.WriteLine($"Age: {Age}");
+        }
+
+        public virtual void Eat()
+        {
+            Console.WriteLine("Person eat");
         }
     }
 }
